@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+	<title>password</title>
+
+	<style type="text/css">
+		
+		body{
+			background-color:#DEF0F7;
+			text-align: center;		
+		}
+
+		h1{
+			font-size: 75px;
+			color:#82204A;
+		}
+
+		h2{
+			
+		}
+
+		p{
+			font-size: 20px;
+		}
+
+		h1.Lobster{
+			font-family: 'Lobster', cursive; 
+		}
+
+		.button{
+			align-content: center;
+		}
+
+	</style>
+	<script type="text/javascript">
+		function checkpassword () 
+		{
+			var password = document.getElementById("passwordbox");
+			var passwordText= password.value;
+			if(passwordText== "Chocolate"){
+				return true;
+			}
+			else if(passwordText== "chocolate") {
+				return true;
+			}
+			else{
+					alert("Access Denied")
+					return false;
+				}
+			}
+	</script>
+</head>
+<body>
+
+	<h1>WELCOME</h1>
+	<h2>Please enter the password:</h2>
+	<p> password: <input id="passwordbox" type="password"> </p>
+	<button><a href="file:///C:/Users/19167/Documents/home.html" onclick="return checkpassword ();">Go!</a></button>
+
+
+</body>
+</html>
